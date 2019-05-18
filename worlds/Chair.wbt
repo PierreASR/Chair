@@ -1,0 +1,157 @@
+#VRML_SIM R2019a utf8
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.08343510215263754 0.9854288194234234 0.14821816885435019 4.113868488078928
+  position -1.03852753443361 0.636542033206708 -0.6479961260834454
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Floor {
+}
+DEF BENCH Solid {
+  translation 0.06999999999999995 0.4000000000000002 0
+  children [
+    DEF BENCH Group {
+      children [
+        DEF SMALL_BAR Solid {
+          translation -0.21000068923537327 0.059999793961734674 -0.08999920472699405
+          rotation 0.5773502691896258 0.5773502691896258 0.5773502691896258 2.094399693899575
+          children [
+            DEF SMALL_BAR Shape {
+              appearance PBRAppearance {
+              }
+              geometry Box {
+                size 0.05 0.14 0.05
+              }
+            }
+          ]
+        }
+        DEF LARGE_BAR Transform {
+          translation -0.2800000000000001 -0.20999966328919203 -0.10000020202571384
+          rotation -1 0 0 1.5707929884596001
+          children [
+            DEF LARGE_BAR Shape {
+              appearance PBRAppearance {
+              }
+              geometry Box {
+                size 0.05 0.27 0.05
+              }
+            }
+          ]
+        }
+        DEF STANDING_BAR Transform {
+          translation -0.2685666108976923 -0.1394851571791402 -0.2685666108976923
+          rotation 0.7071067811865475 0 -0.7071067811865475 0.3808996938995747
+          children [
+            DEF STAND_BAR Shape {
+              appearance PBRAppearance {
+              }
+              geometry Cylinder {
+                height 0.5
+                radius 0.05
+              }
+            }
+          ]
+          rotationStep 0.26178900000000005
+        }
+        DEF SMALL_BAR2 Transform {
+          translation -0.0899999999992874 0.059999041862502406 -0.21000000000000002
+          rotation 0 0 1 1.5708003061004252
+          children [
+            USE SMALL_BAR
+          ]
+        }
+        DEF SMALL_BAR3 Transform {
+          translation -0.0899999999992874 0.05999832869120285 0.03000023875571889
+          rotation 0 0 1 1.5708003061004252
+          children [
+            USE SMALL_BAR
+          ]
+        }
+        DEF SMALL_BAR4 Transform {
+          translation 0.029999248910234408 0.059999577807865544 -0.08999916342992836
+          rotation 0.5773502691896258 0.5773502691896258 0.5773502691896258 2.0944003061004253
+          children [
+            USE SMALL_BAR
+          ]
+        }
+        DEF LARGE_BAR2 Transform {
+          translation -0.09999932657849751 -0.20000033670933404 -0.2799999999999999
+          rotation 0 0 1 1.5707996938995747
+          children [
+            USE LARGE_BAR
+          ]
+        }
+        DEF LARGE_BAR3 Transform {
+          translation 0.08999999999999997 -0.19999966328839838 -0.10000067342036877
+          rotation 1 0 0 1.5707996938995747
+          children [
+            USE LARGE_BAR
+          ]
+        }
+        DEF LARGE_BAR4 Transform {
+          translation -0.08999916434512623 -0.21000035813583506 0.07999999999999992
+          rotation 0 0 1 1.5708003061004252
+          children [
+            USE LARGE_BAR
+          ]
+        }
+        DEF STANDING_BAR2 Transform {
+          translation 0.07514767883681922 -0.14141466678777556 -0.26727429534817826
+          rotation 0.5773502691896258 0.5773502691896258 0.5773502691896258 0.3808996938995747
+          children [
+            USE STAND_BAR
+          ]
+        }
+        DEF STANDING_BAR3 Transform {
+          translation -0.26727429534817826 -0.14141466678777556 0.07514767883681922
+          rotation 0.5773502691896258 0.5773502691896258 0.5773502691896258 -0.3808996938995747
+          children [
+            USE STAND_BAR
+          ]
+        }
+        DEF STANDING_BAR4 Transform {
+          translation 0.08703051825156911 -0.13988265410206926 0.07334565874531968
+          rotation -0.5773502691896258 0.5773502691896258 0.5773502691896258 0.3808996938995747
+          children [
+            USE STAND_BAR
+          ]
+        }
+        DEF SIT Transform {
+          translation -0.09 0.12999999999999998 -0.09999999999999999
+          children [
+            Shape {
+              appearance PBRAppearance {
+                roughness 1
+                metalness 0
+              }
+              geometry Cylinder {
+                height 0.05
+                radius 0.15
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  physics Physics {
+  }
+}
+Solid {
+  translation -0.5100000000000002 0.060000336710127604 -0.09999979797315207
+  rotation 1 0 0 1.5707996938995747
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.1 0.4 0.1
+      }
+    }
+  ]
+  name "solid(1)"
+}
